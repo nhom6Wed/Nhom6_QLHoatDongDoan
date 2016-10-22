@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -71,12 +71,12 @@
 						<div class="topnav">
 							<nav id="top-nav">
 								<ul class="nav nav-sidebar">
-							    	<li><a href="DoanVien_ThongTinCaNhan.jsp"><span class="glyphicon glyphicon-user"></span><strong> Thông Tin Cá Nhân</strong></a></li>
-									<li><a href="DoanVien_ThongBao.jsp"><span class="glyphicon glyphicon-globe"></span><strong> Thông Báo</strong></a></li>
-									<li><a href="DoanVien_TinNhan.jsp"><span class="glyphicon glyphicon-envelope"></span><strong> Tin Nhắn</strong></a></li>
-									<li class="active"><a href="DoanVien_HoatDong.jsp"><span class="glyphicon glyphicon-th-list"></span><strong> Các Hoạt Động</strong></a></li>
-									<li><a href="DoanVien_XemDiem.jsp"><span class="glyphicon glyphicon-education"></span><strong> Xem Điểm</strong></a></li>
-									<li><a href="DoanVien_ThaoLuan.jsp"><span class="glyphicon glyphicon-inbox"></span><strong> Thảo Luận</strong></a></li>									
+							    	<li><a href="#"><span class="glyphicon glyphicon-user"></span><strong> Thông Tin Cá Nhân</strong></a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-globe"></span><strong> Thông Báo</strong></a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-envelope"></span><strong> Tin Nhắn</strong></a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-th-list"></span><strong> Các Hoạt Động</strong></a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-education"></span><strong> Xem Điểm</strong></a></li>
+									<li><a href="#"><span class="glyphicon glyphicon-inbox"></span><strong> Thảo Luận</strong></a></li>
 								</ul>
 							</nav>
 						</div>
@@ -86,28 +86,29 @@
 							<div class="thongtinbar">
 								<h4><p class="text-center"><strong>DANH SÁCH HOẠT ĐỘNG</strong></p></h4>
 							</div>
-							<div class="thongtin-container">
-								<table class="table table-striped scroll">
-					                    <thead>
-					                        <tr>
-					                            <th><strong>Mã Hoạt Động<strong></th>
-					                            <th><strong>Tên Hoạt Động<strong></th>
-					                            <th><strong>Đoàn Viên Đề Xuất<strong></th>
-					                            <th><strong>Thời Gian Hoạt Đông<strong></th>
-					                            <th><strong>Địa điểm Hoat Động<strong></th>
-					                            <th><strong>Chi Tiết Hoat Động<strong></th>
-					                            <th><strong>Đăng Ký</strong></th>
-					                        </tr>
-				                    	</thead>
-					                    <tbody>
+							<div class="thongtin-container">							               
+					         	<table class="table table-striped">
+					                <thead>
+				                        <tr>
+				                            <th><strong>Mã Hoạt Động<strong></th>
+				                            <th><strong>Tên Hoạt Động<strong></th>
+				                            <th><strong>Đoàn Viên Đề Xuất<strong></th>
+				                            <th><strong>Thời Gian Hoạt Đông<strong></th>
+				                            <th><strong>Địa điểm Hoat Động<strong></th>
+				                            <th><strong>Chi Tiết Hoat Động<strong></th>				                            
+				                        </tr>
+				                    </thead>
+				                     <tbody>
 					                        <tr>
 					                            <td>HD01</td>
 					                            <td>Hiến Máu Nhân Đạo</td>
 					                            <td>Trần văn Hồng</td>
 					                            <td>7:30 ngày 21/09/2016</td>
 					                            <td>Phòng Y Tế</td>
-					                            <td><a>Chi Tiết</a></td>
-					                            <td><button type="button" class="btn btn-success btn-sm">ĐĂNG kÝ</button></td>
+					                            <td><a  href="DoanTruong_ChiTietHoatDong.jsp">Chi Tiết</a></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick1" type="button" name="button" value="ĐĂNG KÝ" onclick="DisableBtn(this.id)"/>
+					                           	</td>	
 					                        </tr>
 					                        <tr>
 					                            <td>HD02</td>
@@ -115,8 +116,10 @@
 					                            <td>Trần Văn Hông</td>
 					                            <td>8:30 ngày 22/09/2016</td>
 					                            <td>E1 401</td>
-					                             <td><a>Chi Tiết</a></td>
-					                             <td><button type="button" class="btn btn-success btn-sm">ĐĂNG kÝ</button></td>			 
+					                            <td><a>Chi Tiết</a></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick2" type="button" name="button" value="ĐĂNG KÝ" onclick="DisableBtn(this.id)"/>
+					                           	</td>			 
 					                        </tr>
 					                        <tr>
 					                            <td>HD03</td>
@@ -125,7 +128,9 @@
 					                            <td>9:30 ngày 22/09/2016</td>
 					                            <td>Q9</td>
 					                            <td><a>Chi Tiết</a></td>
-					                            <td><button type="button" class="btn btn-success btn-sm">ĐĂNG kÝ</button></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick3" type="button" name="button" value="ĐĂNG KÝ" onclick="DisableBtn(this.id)"/>
+					                           	</td>
 					                        </tr>
 					                       <tr>
 					                            <td>HD04</td>
@@ -134,16 +139,55 @@
 					                            <td>9:30 ngày 29/09/2016</td>
 					                            <td>Q9</td>
 					                            <td><a>Chi Tiết</a></td>
-					                            <td><button type="button" class="btn btn-success btn-sm">ĐĂNG kÝ</button></td>
+					                           	<td>
+					                           		<input class ="btn btn-primary" id="btnClick4" type="button" name="button" value="ĐĂNG KÝ" onclick="return DisableBtn(this.id)"/>
+					                           	</td>
 					                        </tr>
 					                    </tbody>
-				                	</table>		
-							</div>						
-						</div>
+					            </table>
+							</div>
+							<hr>
+							<div class="thongtinbar">
+								<h4><p class="text-center"><strong>CÁC HOẠT ĐỘNG ĐÃ ĐĂNG KÝ</strong></p></h4>
+							</div>
+							<div class="thongtin-container">							               
+					         	<table class="table table-striped">
+					                <thead>
+				                        <tr>
+				                            <th><strong>Mã Hoạt Động<strong></th>
+				                            <th><strong>Tên Hoạt Động<strong></th>
+				                            <th><strong>Đoàn Viên Đề Xuất<strong></th>
+				                            <th><strong>Thời Gian Hoạt Đông<strong></th>
+				                            <th><strong>Địa điểm Hoat Động<strong></th>
+				                            <th><strong>Chi Tiết Hoat Động<strong></th>				                            
+				                        </tr>
+				                    </thead>
+				                    <tbody>			                        
+				                        <tr>
+				                            <td>HD03</td>
+				                            <td>Chủ Nhật Xanh</td>
+				                            <td>Trần Văn Hông</td>
+				                            <td>9:30 ngày 22/09/2016</td>
+				                            <td>Q9</td>
+				                            <td><a>Chi Tiết</a></td>
+				                        </tr>
+				                       <tr>
+				                            <td>HD04</td>
+				                            <td>Chủ Nhật Xanh</td>
+				                            <td>Trần Văn Hông</td>
+				                            <td>9:30 ngày 29/09/2016</td>
+				                            <td>Q9</td>
+				                            <td><a>Chi Tiết</a></td>
+				                        </tr>
+				                    </tbody>
+					            </table>
+							</div>
+						</div>						
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<footer>
 		<div id="container-footer">
 			<div class="row">
@@ -158,12 +202,27 @@
 				<div class="col-md-4">
 					<p class="text-right">Truy cập tháng: 10</p>
 					<hr>
-					<p class="text-right">Tổng truy cập: 178,247</p>
+					<p class="text-right">Tổng truy cập: 178,247</p>í
 				</div>
 			</div>
 		</div>	
 	</footer>
 	</div>
+
+	<script type="text/javascript">
+    function CheckForm() {
+      	alert("Đăng Ký Thành Công");
+        return true;
+    }
+	</script>
+
+	<script>
+	  	function DisableBtn(elem){
+	  		document.getElementById(elem).disabled = true;
+	  		return CheckForm();
+	  	}
+	</script>
+	
 	<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);

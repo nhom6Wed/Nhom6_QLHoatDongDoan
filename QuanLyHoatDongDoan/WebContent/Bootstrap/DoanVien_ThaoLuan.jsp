@@ -71,17 +71,12 @@
 						<div class="topnav">
 							<nav id="top-nav">
 								<ul class="nav nav-sidebar">
-							    	<li><a href="Admin_DSHoatDong.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Hoạt Động</strong></a></li>
-									<li class="active"><a href="Admin_DSDoanVien.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Đoàn Viên</strong></a></li>
-									<li><a href="Admin_DSTaiKhoan.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Tài Khoản</strong></a></li>
-                                    <li><a href="Admin_DSTinNhan.jsp"><span class="glyphicon glyphicon-envelope"></span><strong> Tin Nhắn</strong></a></li>
-                                    <li><a href="Admin_ThongBao.jsp"><span class="glyphicon glyphicon-globe"></span><strong> Thông Báo</strong></a></li>
-                                    <li><a href="Admin_QLHoatDong.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Hoạt Động</strong></a></li>
-                                    <li><a href="Admin_QLDoanVien.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Đoàn Viên</strong></a></li>
-                                    <li><a href="Admin_QLTaiKhoan.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Tài Khoản</strong></a></li>
-                                    <li><a href="Admin_QLTinNhan.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Tin Nhắn</strong></a></li>
-                                    <li><a href="Admin_QLThongBao.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Thông Báo</strong></a></li>
-                                    <li><a href="Admin_DiemDanh.jsp"><span class="glyphicon glyphicon-wrench"></span><strong> Điểm Danh</strong></a></li>
+							    	<li><a href="DoanVien_ThongTinCaNhan.jsp"><span class="glyphicon glyphicon-user"></span><strong> Thông Tin Cá Nhân</strong></a></li>
+									<li><a href="DoanVien_ThongBao.jsp"><span class="glyphicon glyphicon-globe"></span><strong> Thông Báo</strong></a></li>
+									<li><a href="DoanVien_TinNhan.jsp"><span class="glyphicon glyphicon-envelope"></span><strong> Tin Nhắn</strong></a></li>
+									<li><a href="DoanVien_HoatDong.jsp"><span class="glyphicon glyphicon-th-list"></span><strong> Các Hoạt Động</strong></a></li>
+									<li><a href="DoanVien_XemDiem.jsp"><span class="glyphicon glyphicon-education"></span><strong> Xem Điểm</strong></a></li>
+									<li class="active"><a href="DoanVien_ThaoLuan.jsp"><span class="glyphicon glyphicon-inbox"></span><strong> Thảo Luận</strong></a></li>								
 								</ul>
 							</nav>
 						</div>
@@ -95,7 +90,7 @@
 						<div class="pagination">
 						   2025 chủ đề   [ Trang <strong>1</strong> trên <strong>135</strong> ]
 							<span><strong>1</strong><span class="page-sep">, 
-							</span><a href="./viewforum.php?f=94&amp;sid=5b8cf24961176324495e00ca84b3be97&amp;start=15">2</a><span class="page-sep">,
+							</span><a href="DoanVien_ThaoLuan_Click.jsp">2</a><span class="page-sep">,
 							 </span><a href="./viewforum.php?f=94&amp;sid=5b8cf24961176324495e00ca84b3be97&amp;start=30">3</a><span class="page-sep">,
 							  </span><a href="./viewforum.php?f=94&amp;sid=5b8cf24961176324495e00ca84b3be97&amp;start=45">4</a><span class="page-sep">,
 							   </span><a href="./viewforum.php?f=94&amp;sid=5b8cf24961176324495e00ca84b3be97&amp;start=60">5</a> ... <a href="./viewforum.php?f=94&amp;sid=5b8cf24961176324495e00ca84b3be97&amp;start=2010">135</a>
@@ -122,7 +117,7 @@
 								<td class="row1">
 									<div class="a-left">
 										
-										<span class="genn "><a title="Đã gửi: 19 Tháng 10 2016, 18:10" href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97" style="color: #0000FF">THẢO LUẬN LOTO_ĐB NGÀY 20/10/2016</a></span>&nbsp;(<span class="gens"><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=0">1</a> ... <a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=580">59</a><span class="page-sep">, </span><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=590">60</a><span class="page-sep">, </span><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=600">61</a></span>)
+										<span class="genn "><a title="Đã gửi: 19 Tháng 10 2016, 18:10" href="DoanVien_ThaoLuan_Click.jsp" style="color: #0000FF">THẢO LUẬN LOTO_ĐB NGÀY 20/10/2016</a></span>&nbsp;(<span class="gens"><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=0">1</a> ... <a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=580">59</a><span class="page-sep">, </span><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=590">60</a><span class="page-sep">, </span><a href="./viewtopic.php?f=94&amp;t=118808&amp;sid=91338971d67613d3f4d82d7bf88f6b97&amp;start=600">61</a></span>)
 										<p class="gens"><a href="./memberlist.php?mode=viewprofile&amp;u=217837&amp;sid=91338971d67613d3f4d82d7bf88f6b97" style="color: #6600CC;" class="username-coloured">Cachivang222</a></p>
 									</div>
 									<div class="a-right">
@@ -192,11 +187,7 @@
 								<td align="center" class="row1" colspan="5"><form method="post" action="./viewforum.php?f=94&amp;start=0&amp;sid=91338971d67613d3f4d82d7bf88f6b97"><span class="gens display">Hiển thị chủ đề cách đây:</span> <select name="st" id="st"><option value="0" selected="selected">Tất cả chủ đề</option><option value="1">1 ngày</option><option value="7">7 ngày</option><option value="14">2 tuần</option><option value="30">1 tháng</option><option value="90">3 tháng</option><option value="180">6 tháng</option><option value="365">1 năm</option></select>&nbsp;<span class="gens">Sắp xếp theo:</span> <select name="sk" id="sk"><option value="a">Người gửi</option><option value="t" selected="selected">Ngày gửi</option><option value="r">Trả lời</option><option value="s">Tiêu đề</option><option value="v">Xem</option></select> <select name="sd" id="sd"><option value="a">Tăng dần</option><option value="d" selected="selected">Giảm dần</option></select>&nbsp;<input class="formbutton" type="submit" value="Chuyển" name="sort"></form></td>
 							</tr>
 						</tbody></table>
-						<div class="a-left">
-							<div class="topicbutton a-left">
-								<span class="i-newtopic"><a href="DoanVien_ThaoLuan_Create.jsp">Tạo chủ đề mới</a></span>
-							</div>
-						</div>
+						
 					</div>
 					</div>
 				</div>

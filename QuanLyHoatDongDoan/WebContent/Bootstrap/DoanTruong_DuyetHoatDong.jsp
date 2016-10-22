@@ -1,7 +1,7 @@
-
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
@@ -72,7 +72,7 @@
 						<div class="topnav">
 							<nav id="top-nav">
 								<ul class="nav nav-sidebar">
-							    	<li ><a href="DoanTruong_DSHoatDong.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Hoạt Động</strong></a></li>
+							    	<li><a href="DoanTruong_DSHoatDong.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Hoạt Động</strong></a></li>
 									<li><a href="DoanTruong_QLHoatDong.jsp" ><span class="glyphicon glyphicon-fire"></span><strong> Thêm Hoạt Động</strong></a></li>
 									<li><a href="DoanTruong_DSChiDoan.jsp"> <span class="glyphicon glyphicon-th-list"></span><strong> Danh Sách Chi Đoàn</strong></a></li>
 									<li><a href="DoanTruong_QLChiDoan.jsp" ><span class="glyphicon glyphicon-wrench"></span><strong> Quản Lý Chi Đoàn</strong></a></li>
@@ -88,7 +88,7 @@
 							</div>
 							<div class="thongtin-container">
 								<table class="table table-striped scroll">
-					                    <thead>
+					                <thead>
 				                        <tr>
 				                            <th><strong>Mã Hoạt Động</strong></th>
 				                            <th><strong>Tên Hoạt Động</strong></th>
@@ -98,16 +98,18 @@
 				                            <th><strong>Chi Tiết Hoat Động</strong></th>
 				                            <th><strong>Duyệt Hoạt Động</strong></th>
 				                        </tr>
-					                    </thead>
-					                    <tbody>
+					                </thead>
+					                 <tbody>
 					                        <tr>
 					                            <td>HD01</td>
 					                            <td>Hiến Máu Nhân Đạo</td>
 					                            <td>Trần văn Hồng</td>
 					                            <td>7:30 ngày 21/09/2016</td>
 					                            <td>Phòng Y Tế</td>
-					                            <td><a>Chi Tiết</a></td>
-					                            <td colspan="" rowspan="" headers=""><a href="#"><span class=""></span><strong> <h5><button class="btn btn-primary">Duyệt</button></a></td>
+					                            <td><a href="DoanTruong_ChiTietHoatDong.jsp">Chi Tiết</a></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick1" type="button" name="button" value="DUYỆT" onclick="return DisableBtn(this.id)"/>
+					                           	</td>
 					                        </tr>
 					                        <tr>
 					                            <td>HD02</td>
@@ -116,10 +118,59 @@
 					                            <td>8:30 ngày 22/09/2016</td>
 					                            <td>E1 401</td>
 					                            <td><a>Chi Tiết</a></td>
-					                            <td colspan="" rowspan="" headers=""><a href="#"><span class=""></span><strong> <h5><button class="btn btn-primary">Duyệt</button></a></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick2" type="button" name="button" value="DUYỆT" onclick="return DisableBtn(this.id)"/>
+					                           	</td>
+					                        </tr>
+					                        <tr>
+					                            <td>HD03</td>
+					                            <td>Chủ Nhật Xanh</td>
+					                            <td>Trần Văn Hông</td>
+					                            <td>9:30 ngày 22/09/2016</td>
+					                            <td>Q9</td>
+					                            <td><a>Chi Tiết</a></td>
+					                            <td>
+					                           		<input class ="btn btn-primary" id="btnClick3" type="button" name="button" value="DUYỆT" onclick="return DisableBtn(this.id)"/>
+					                           	</td>
 					                        </tr>	                       
 					                    </tbody>
-				                	</table>		
+				                </table>		
+							</div>
+							<hr>
+							<div class="thongtinbar">
+								<h4><p class="text-center"><strong>CÁC HOẠT ĐỘNG ĐÃ ĐƯỢC DUYỆT</strong></p></h4>
+							</div>
+							<div class="thongtin-container">
+								<table class="table table-striped scroll">
+					                <thead>
+				                        <tr>
+				                            <th><strong>Mã Hoạt Động</strong></th>
+				                            <th><strong>Tên Hoạt Động</strong></th>
+				                            <th><strong>Đoàn Viên Đề Xuất</strong></th>
+				                            <th><strong>Thời Gian Hoạt Đông</strong></th>
+				                            <th><strong>Địa điểm Hoat Động</strong></th>
+				                            <th><strong>Chi Tiết Hoat Động</strong></th>
+				                        </tr>
+					                </thead>
+					                 <tbody>
+					                        <tr>
+					                            <td>HD01</td>
+					                            <td>Hiến Máu Nhân Đạo</td>
+					                            <td>Trần văn Hồng</td>
+					                            <td>7:30 ngày 21/09/2016</td>
+					                            <td>Phòng Y Tế</td>
+					                            <td><a>Chi Tiết</a></td>
+					                        </tr>
+					                        <tr>
+					                            <td>HD02</td>
+					                            <td>Kế Nạp Đoàn Viên</td>
+					                            <td>Trần Văn Hông</td>
+					                            <td>8:30 ngày 22/09/2016</td>
+					                            <td>E1 401</td>
+					                            <td><a>Chi Tiết</a></td>
+					                        </tr>	                       
+					                    </tbody>
+				                </table>		
 							</div>						
 						</div>
 					</div>
@@ -146,6 +197,22 @@
 		</div>	
 	</footer>
 	</div>
+
+	<script type="text/javascript">
+    function CheckForm() {
+      	alert("Duyệt Thành Công");
+        return true;
+    }
+	</script>
+
+
+	<script>
+	  	function DisableBtn(elem){
+	  		document.getElementById(elem).disabled = true;
+	  		return CheckForm();
+	  	}
+	</script>
+
 	<script>
 		var slideIndex = 1;
 		showSlides(slideIndex);

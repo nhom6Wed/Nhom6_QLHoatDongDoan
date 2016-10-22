@@ -104,7 +104,7 @@
 					                            <td>Trần văn Hồng</td>
 					                            <td>7:30 ngày 21/09/2016</td>
 					                            <td>Phòng Y Tế</td>
-					                            <td><a>Chi Tiết</a></td>
+					                            <td><a href="DoanTruong_ChiTietHoatDong.jsp">Chi Tiết</a></td>
 					                        </tr>
 					                        <tr>
 					                            <td>HD02</td>

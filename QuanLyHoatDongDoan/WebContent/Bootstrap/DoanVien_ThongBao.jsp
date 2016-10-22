@@ -127,14 +127,17 @@
 							                                <tr class="col-md-8">
 									                            <td align="left">
 									                                <span id="" class="contentnews">
-									                                	Từ ngày 23.09.2015, ĐH Sư Phạm Kỹ Thuật cùng đồng hành với Today’s Voice về truyền thông cho cuộc thi Today’s Voice Contest 2015 - Một cuộc thi thường niên dành cho giới trẻ, với mục đích tìm ra giải pháp để nâng cao năng lực của giới trẻ, từ đó phát triển nguồn nhân lực và làm nên thương hiệu của Việt Nam. 
+									                                	Từ ngày 23.09.2015, ĐH Sư Phạm Kỹ Thuật cùng đồng hành với Today’s Voice về truyền thông cho cuộc thi 
+									                                	Today’s Voice Contest 2015 - Một cuộc thi thường niên dành cho giới trẻ,
+									                                	 với mục đích tìm ra giải pháp để nâng cao năng lực của giới trẻ, từ đó phát triển nguồn nhân lực và làm 
+									                                	 nên thương hiệu của Việt Nam. 
 									                                </span>
 									                            </td>
 							                                </tr>
 							                                <tr>
 								                                <td class="contentnews" colspan="2" align="right">
 									                                <img border="0" src="http://online.hcmute.edu.vn/images/icon-search.gif" width="11" height="11"> 
-									                                <a id="" class="chitiet" href="">Chi tiết</a>
+									                                <a id="" class="chitiet" href="DoanVienChiTietThongBao.jsp">Chi tiết</a>
 									                            </td>
 							                                </tr>
 					                                	</tbody>
